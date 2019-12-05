@@ -1,0 +1,968 @@
+* { 
+    margin: 0;
+    padding: 0;
+   }
+
+
+
+   @font-face {
+    font-family: 'Lucida Sans';
+    src: url('assets/fonts/LucidaSans.eot');
+    src: url('assets/fonts/LucidaSans.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/LucidaSans.woff2') format('woff2'),
+    url('assets/fonts/LucidaSans.woff') format('woff'),
+    url('assets/fonts/LucidaSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Segoe WP';
+    src: url('assets/fonts/SegoeWP.eot');
+    src: url('assets/fonts/SegoeWP.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SegoeWP.woff2') format('woff2'),
+    url('assets/fonts/SegoeWP.woff') format('woff'),
+    url('assets/fonts/SegoeWP.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Lucida Sans';
+    src: url('assets/fonts/LucidaSans-Italic.eot');
+    src: url('assets/fonts/LucidaSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/LucidaSans-Italic.woff2') format('woff2'),
+    url('assets/fonts/LucidaSans-Italic.woff') format('woff'),
+    url('assets/fonts/LucidaSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Asap';
+    src: url('assets/fonts/Asap-Regular.eot');
+    src: url('assets/fonts/Asap-Regular.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/Asap-Regular.woff2') format('woff2'),
+    url('assets/fonts/Asap-Regular.woff') format('woff'),
+    url('assets/fonts/Asap-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Segoe WP';
+    src: url('assets/fonts/SegoeWP-Light.eot');
+    src: url('assets/fonts/SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SegoeWP-Light.woff2') format('woff2'),
+    url('assets/fonts/SegoeWP-Light.woff') format('woff'),
+    url('assets/fonts/SegoeWP-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans Caption';
+    src: url('assets/fonts/ptsans/PTSans-CaptionBold.eot');
+    src: url('assets/fonts/ptsans/PTSans-CaptionBold.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ptsans/PTSans-CaptionBold.woff2') format('woff2'),
+    url('assets/fonts/ptsans/PTSans-CaptionBold.woff') format('woff'),
+    url('assets/fonts/ptsans/PTSans-CaptionBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('assets/fonts/ptsans/PTSans-NarrowBold.eot');
+    src: url('assets/fonts/ptsans/PTSans-NarrowBold.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ptsans/PTSans-NarrowBold.woff2') format('woff2'),
+    url('assets/fonts/ptsans/PTSans-NarrowBold.woff') format('woff'),
+    url('assets/fonts/ptsans/PTSans-NarrowBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans Caption';
+    src: url('assets/fonts/ptsans/PTSans-Caption.eot');
+    src: url('assets/fonts/ptsans/PTSans-Caption.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ptsans/PTSans-Caption.woff2') format('woff2'),
+    url('assets/fonts/ptsans/PTSans-Caption.woff') format('woff'),
+    url('assets/fonts/ptsans/PTSans-Caption.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans';
+    src: url('assets/fonts/ptsans/PTSans-BoldItalic.eot');
+    src: url('assets/fonts/ptsans/PTSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ptsans/PTSans-BoldItalic.woff2') format('woff2'),
+    url('assets/fonts/ptsans/PTSans-BoldItalic.woff') format('woff'),
+    url('assets/fonts/ptsans/PTSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans';
+    src: url('assets/fonts/ptsans/PTSans-Bold.eot');
+    src: url('assets/fonts/ptsans/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ptsans/PTSans-Bold.woff2') format('woff2'),
+    url('assets/fonts/ptsans/PTSans-Bold.woff') format('woff'),
+    url('assets/fonts/ptsans/PTSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans';
+    src: url('assets/fonts/ptsans/PTSans-Regular.eot');
+    src: url('assets/fonts/ptsans/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ptsans/PTSans-Regular.woff2') format('woff2'),
+    url('assets/fonts/ptsans/PTSans-Regular.woff') format('woff'),
+    url('assets/fonts/ptsans/PTSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('assets/fonts/ptsans/PTSans-Narrow.eot');
+    src: url('assets/fonts/ptsans/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ptsans/PTSans-Narrow.woff2') format('woff2'),
+    url('assets/fonts/ptsans/PTSans-Narrow.woff') format('woff'),
+    url('assets/fonts/ptsans/PTSans-Narrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans';
+    src: url('assets/fonts/ptsans/PTSans-Italic.eot');
+    src: url('assets/fonts/ptsans/PTSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/ptsans/PTSans-Italic.woff2') format('woff2'),
+    url('assets/fonts/ptsans/PTSans-Italic.woff') format('woff'),
+    url('assets/fonts/ptsans/PTSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/SegoeUI-BoldItalic.eot');
+    src: url('assets/fonts/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SegoeUI-BoldItalic.woff2') format('woff2'),
+    url('assets/fonts/SegoeUI-BoldItalic.woff') format('woff'),
+    url('assets/fonts/SegoeUI-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/SegoeUI-Bold.eot');
+    src: url('assets/fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SegoeUI-Bold.woff2') format('woff2'),
+    url('assets/fonts/SegoeUI-Bold.woff') format('woff'),
+    url('assets/fonts/SegoeUI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/SegoeUI-Italic.eot');
+    src: url('assets/fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SegoeUI-Italic.woff2') format('woff2'),
+    url('assets/fonts/SegoeUI-Italic.woff') format('woff'),
+    url('assets/fonts/SegoeUI-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/SegoeUI.eot');
+    src: url('assets/fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SegoeUI.woff2') format('woff2'),
+    url('assets/fonts/SegoeUI.woff') format('woff'),
+    url('assets/fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('assets/fonts/SegoeUI-Light.eot');
+    src: url('assets/fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/SegoeUI-Light.woff2') format('woff2'),
+    url('assets/fonts/SegoeUI-Light.woff') format('woff'),
+    url('assets/fonts/SegoeUI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'),
+    url('assets/fonts/open-sans/opensans.woff2') format('woff2'),
+    url('assets/fonts/open-sans/opensans.woff') format('woff'),
+    url('assets/fonts/open-sans/opensans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+body {
+    height: 1847px;
+    width: 1300px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.header-main-wrapper{
+    height: 566px;
+    background-image: url(./assets/images/main-wrapper.png);
+
+}
+
+.content {
+    position: relative;
+    margin-left: 139px;
+    margin-right: 140px;
+}
+
+h1{
+    display: inline-block;
+    position: relative;
+    top:5px;
+    margin-left: -2px;
+    font-size: 41px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+
+.logo {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.logo img {
+    position: relative;
+    top: 27px;
+}
+
+.menu {
+    list-style: none;
+    font-size: 0;
+}
+
+.menu li {
+    display: inline;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.content .nav {
+    height: 45px;
+    width: 458px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 62px;
+    margin-right: 4px;
+    background-image: url(./assets/images/menu-wrapper.svg);
+}
+
+.menu {
+    
+    height: 41px;
+    width: 453px;
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+.menu li{
+    display: inline-block;
+    height: 41px;
+    background-color: rgba(245, 197, 6, 1);
+    
+}
+
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Segoe WP";
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 9px;
+    color: #9b7d08;
+    letter-spacing: 0.01em;
+}
+.company {
+    width: 172px;
+}
+.company a {
+    margin-right: 22px;
+}
+.services {
+    width: 132px;
+    border-left: solid 1px rgba(0, 0, 0, 0.1)
+}
+.services a {
+    margin-right: 18px;
+}
+.contacts {
+    width: 147px;
+    border-left: solid 1px rgba(0, 0, 0, 0.1)
+}
+.contacts a {
+    margin-right: 22px;
+}
+
+.menu img {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.contacts img {
+    margin-right: 4px;
+}
+
+/*main*/
+.video {
+    height: 471px;
+}
+
+.video-desktop {
+    display: inline-block;
+    margin-top: 73px;
+    margin-left: 11px;
+    height: 327px;
+    width: 549px;
+}
+.video-mobil {
+    display: none;
+}
+.video-name {
+    display: inline-block;
+    bottom: 40px;
+    vertical-align: top;
+    position: relative;
+    left: 45px;
+    top: 144px;
+}
+.video-name p {
+    font-size: 63px;
+    letter-spacing: 1px;
+    font-family: "Asap";
+    text-transform: uppercase;
+    
+}
+.video-name p:nth-child(1) {
+    color: #f5c506;
+    padding-left: 40px;
+}
+.video-name p:nth-child(2) {
+    color: #ffffff;
+    word-spacing: -2px;
+    line-height: 71px;
+}
+.video-slider {
+    position: absolute;
+    top: 299px;
+}
+#next-slider {
+    margin-left: 1231px;
+}
+
+
+/*main-supports*/
+
+.main-supports {
+    margin-top: -1px;
+    height: 213px;
+    background-image: url(./assets/images/main-supports-wrapper.png)
+}
+.menu-wrapper-bar {
+    display: none;
+}
+
+.supports-menu {
+    list-style: none;
+    font-size: 0;
+}
+.supports-menu li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    height: 213px;
+    box-sizing: border-box;
+}
+.supports-menu a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+}
+.betterdesign {
+    width: 340px;
+    padding-top: 61px;
+    border-left: solid 1px rgba(0,0,0,0.14);
+}
+.betterdesign img{
+    position: relative;
+    left:-3px;
+}
+.betterdesign a {
+    margin-top: 10px;
+    margin-left: 19px;
+}
+.customise {
+    padding-top: 37px;
+    padding-left: 60px;
+    width: 300px;
+    margin-left: 1px;
+    border-left: solid 1px rgba(0,0,0,0.14);
+}
+.customise a {
+    margin-top:13px;
+}
+.itsfree {
+    padding-top: 54px;
+    padding-left: 18px;
+    width: 300px;
+    margin-left: 39px;
+    border-left: solid 1px rgba(0,0,0,0.14);
+}
+.itsfree a {
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+
+/*section2*/
+.main-section-story {
+    height: 508px;
+    background-image: url(./assets/images/main-section1-wrapper.png);
+}
+.main-section-story h2 {
+    width: 918px;
+
+    font-size: 37px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 32px;
+    padding-left: 2px;
+}
+.story-conteiner {
+    margin-top: 20px;
+    font-size: 0;
+}
+.story {
+    display: inline-block;
+    vertical-align: top;
+    height: 233px;
+    width: 340px;
+    background-color: rgb(236, 158, 3);
+    margin-top: 10px;
+}
+.story p {
+    width: 279px;
+    text-align: left;
+    font-size: 29px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    margin-left: 30px;
+    margin-top: 16px;
+    letter-spacing: 0.4px;
+}
+.story-plus {
+    float: right;
+    margin-right: 13px;
+    margin-top: 2px;
+}
+.story-video {
+    vertical-align: top;
+    margin-top: 9px;
+    height: 233px;
+    width: 315px;
+}
+.twitter {
+    display: inline-block;
+    vertical-align: top;
+    height: 233px;
+    width: 329px;
+    background-color: rgb(236, 158, 3);
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.twitter-icon {
+    margin-left: 82px;
+    margin-top: 58px;
+}
+.twitter-plus {
+    display: inline-block;
+    position: relative;
+    top: 28px;
+    left: -4px;
+}
+.twitter p {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    margin-top: 9px;
+    margin-left: 40px;
+}
+.numer-month {
+    height: 86px;
+    width: 113px;
+    background-color: rgb(221, 177, 1);
+    text-align: center;
+}
+.date {
+    font-size: 51px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    padding-top: 12px;
+    margin-left: 5px;
+}
+.month {
+    font-size: 21px;
+    letter-spacing: 0.4px;
+    line-height: 38px;
+    color: #b26529;
+    font-family: "Segoe UI";
+    text-transform: uppercase;
+    padding-left: 4px;
+}
+.radio {
+    margin-top: 42px;
+    margin-left: 73px;
+}
+/*section 3*/
+.main-section-store {
+    height: 497px;
+    width: 1300px;
+    background-image: url(./assets/images/section3-wrapper.png)
+}
+.main-section-store h2 {
+    font-size: 43px;
+    letter-spacing: 0.4px;
+    color: #f5c506;
+    font-family: "PT Sans";
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 5px;
+    
+}
+.stor-img {
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: -2px;
+}
+.store-list {
+    display: inline-block;
+    width: 345px;
+    margin-left: 110px;
+    margin-top: 75px;
+    font-size: 46px;
+}
+.store-list li{
+    color: rgba(245, 197, 6, 0.57);
+}
+.store-list li span {
+    display: inline-block;
+    height: 36px;
+    font-size: 22px;
+    letter-spacing: 0.08px;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-weight: 400;
+    vertical-align: middle;
+    margin-left: -1px;
+    word-spacing: 0px;
+}
+.store-list li:nth-child(2) {
+    margin-top: 9px;
+    line-height: 29px;
+}
+.store-list li:nth-child(3) {
+    margin-top: 28px;
+    line-height: 29px;
+}
+.store-list li:nth-child(4) {
+    margin-top: 14px;
+    line-height: 29px;
+}
+/*footer*/
+.footer {
+    height: 64px;
+    width: 1300px;
+    background-image: url(./assets/images/footer-wrapper.svg)
+}
+.footer img {
+    margin-left: 138px;
+    margin-top: 6px;
+}
+.footer h3 {
+    font-family: "Lucida Sans";
+    font-style: italic;
+    display: inline-block;
+    font-size: 29px;
+    letter-spacing: 0.4px;
+    font-weight: 100;
+    color: #ffffff;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 17px;
+    margin-left: 2px;
+}
+/*only for mobil*/
+.twitter-msg {
+    display: none;
+}
+@media (max-width: 800px) {
+    body {
+        height: 1553px;
+        width: 640px;
+    }
+    .header-main-wrapper {
+        background-image: none;
+        background-color: black;
+        height: 337px;
+    }
+    .content {
+        position: static;
+        width: 640px;
+        margin: 0;
+    }
+    .logo img {
+        height: 41px;
+        width: 41px;
+        top: 10px;
+        left: 11px;
+    }
+    h1 {
+        font-size: 19px;
+        vertical-align: top;
+        margin-left: 13px;
+        margin-top: 17px;
+    }
+    .content .nav {
+        top: 0;
+        width: 300px;
+        background-image: none;
+        position: static;
+        margin-left: -4px;
+    }
+    .logo-mobil {
+        height: 62px;
+        width: 186px;
+        background-image: url(./assets/images/mobil-h1.svg);
+        display: inline-block;
+    }
+    .nav {
+        vertical-align: top;
+    }
+    .menu {
+        margin: 0;
+        height: 62px;
+        display: inline-block;
+        width: 454px;
+        
+    }
+    .menu li {
+        height: 62px;
+    }
+    .menu a{
+        font-size: 19px;
+        margin-right: 24px;
+        margin-top: 18px;
+    }
+    .company {
+        width: 172px;
+    }
+    .company img {
+        height: 23px;
+        width: 25px;
+        margin-top: 19px;
+        margin-right: 6px;
+    }
+    .services {
+        width: 133px;
+        border-left: solid 1px rgba(0, 0, 0, 0.1)
+    }
+    .services img {
+        height: 23px;
+        width: 23px;
+        margin-top: 19px;
+        margin-right: 4px;
+    }
+    .services a {
+        margin-right: 16px;
+    }
+    .contacts {
+        width: 147px;
+        border-left: solid 1px rgba(0, 0, 0, 0.1)
+    }
+    .contacts img {
+        height: 22px;
+        width: 29px;
+        margin-top: 19px;
+        margin-right: 7px;
+    }
+    .contacts a {
+        margin-right: 12px;
+    }
+    .video-desktop, .video-slider, .video-name, .story-head, .twitter-plus, .radio, .numer-month,.twitter p {
+        display: none;
+    }
+    .video-mobil {
+        display: table;
+        z-index: -5;
+    }
+    .main-supports {
+        background-image: none;
+    }
+    .menu-wrapper-bar {
+        display: table;
+        position: absolute;
+        z-index: 2;
+        vertical-align: top;
+        top: 380px;
+    }
+    .supports-menu li {
+        text-align: center;
+        vertical-align: top;
+        border: 0;
+        position: absolute;
+        z-index: 3;
+    }
+    .betterdesign {
+        width: 200px;
+        left: -8px;
+        top: 360px;
+    }
+    .betterdesign img {
+        height: 62px;
+        width: 90px;
+    }
+    .betterdesign a{
+        height: 70px;
+        width: 200px;
+        word-spacing: 0;
+        font-size: 23px;
+        margin-top: 17px;
+        margin-left: 3px;
+        letter-spacing: 0.3px;
+    }
+    .customise {
+        left: 147px;
+        top: 380px;
+    }
+    .customise img {
+        height: 70px;
+        width: 68px;
+    }
+    .customise a {
+        margin-top: 13px;
+        font-size: 23px;
+        letter-spacing: 0.2px;
+        padding-left: 2px;
+    }
+    .itsfree {
+        margin: 0;
+        padding: 0;
+        left: 379px;
+        top: 417px;
+    }
+    .itsfree img {
+        margin: 0;
+        padding: 0;
+        height: 70px;
+        width: 69px;
+    }
+    .itsfree a {
+        margin-left: 14px;
+        margin-top: 13px;
+        padding: 0;
+        height: 70px;
+        font-size: 23px;
+        letter-spacing: 0.2px;
+    }
+    .main-section-story {
+        height: 495px;
+        background-image: none;
+    }
+    .story {
+        height: 232px;
+        width: 300px;
+        margin-top: 21px;
+        margin-left: 9px;
+    }
+    .story-conteiner {
+        margin-top: -1px;
+        font-size: 0;
+    }
+    .story-video {
+        margin-top: 19px;
+        margin-left: 9px;
+        height: 233px;
+        width: 315px;
+    }
+    .story p {
+        font-size: 28px;
+        margin-top: 15px;
+        margin-left: 26px;
+        width: 246px;
+        letter-spacing: 0.7px;
+        line-height: 33px;
+    }
+    .story-plus {
+        margin-right: 12px;
+        margin-top: -11px;
+    }
+    .twitter {
+        margin-top: 9px;
+        margin-left: 0;
+        width: 640px;
+        background-color: rgb(245, 197, 7);
+    }
+    .twitter-msg {
+        display: inline-block;
+        width: 300px;
+        vertical-align: top;
+        margin-top: 24px;
+        position: relative;
+
+    }
+    .twitter-msg img {
+        margin-left: 78px;
+        display: inline-block;
+    }
+    .twitter-msg img:nth-child(3) {
+        opacity: 0.7;
+        margin-top: 14px;
+    }
+    .twitter-msg img:nth-child(5) {
+        opacity: 0.6;
+        margin-top: 14px;
+    }
+    .twitter-msg p {
+        display: inline-block;
+        position: absolute;
+        top: -3px;
+        left: 66px;
+        width: 225px;
+        font-size: 13px;
+        letter-spacing: 0px;
+        color: #8f8e8e;
+        font-family: "Arial";
+        letter-spacing: 0.05px;
+        line-height: 16px;
+    }
+    .twitter-msg p:nth-child(4) {
+        top: 54px;
+    }
+    .twitter-msg p:nth-child(6) {
+        top: 110px;
+    }
+    .input-twitt {
+        display: inline-block;
+        margin-left: 91px;
+        margin-top: 14px;
+        position: relative;
+    }
+    .text-tweet {
+        width: 270px;
+        height: 29px;
+        border-radius: 10px;
+        border: 1px solid rgba(0,0,0,0.15);
+    }
+    .submit-button {
+        position: absolute;
+        height: 31px;
+        right: -2px;
+        top: 0px;
+        width: 73px;
+        cursor: pointer
+    }
+    
+    .submit-button[value] {
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-family: "Arial";
+        background-color: rgb(226, 161, 31);
+        border: 0;
+        border-radius: 0 10px 10px 0;
+
+    }
+    .main-section-store {
+        width: 640px;
+        height: 466px;
+    }
+    .main-section-store h2{
+        font-size: 43px;
+        letter-spacing: 0;
+        padding-top: 29px;
+        padding-left: 0px;
+        margin-left: -6px;
+        word-spacing: 0;
+    }
+    .stor-img {
+        margin-top: 29px;
+        margin-left: 27px;
+    }
+    .store-list {
+        display: none;
+    }
+    .footer {
+        width: 640px;
+        height: 43px;
+    }
+    .footer img {
+        height: 33px;
+        width: 32px;
+        margin-top: 5px;
+        margin-left: 65px;
+    }
+    .footer h3 {
+        margin-top: 12px;
+        margin-left: 4px;
+        font-size: 17px;
+        letter-spacing: 0px;
+    }
+    
+
+}
