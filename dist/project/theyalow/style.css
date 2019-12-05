@@ -3,7 +3,19 @@
     padding: 0;
    }
 
-
+   .buttons {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    bottom: 50px;
+    right: 50px;
+  
+  }
+  
+  .buttons button {
+    height: 40px;
+    width: 100%;
+  }
 
    @font-face {
     font-family: 'Lucida Sans';

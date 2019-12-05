@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+<link href="main.css" rel="stylesheet"></head>
+<body>
+    <div class="content">
+        <header class="header">
+                <h1>Portfolio</h1>
+                <figure>
+                    <img id="first-item" class="header-photo" src="src/images/me.png" alt="my photo">
+                </figure>
+                <div class="header-info">
+                    <h2 class="header-info--name">Sergey Lysenko</h2>
+                    <a href="" class="header-info--github">Github: Olys1703</a>
+                </div>
+        </header>
+        <main class="main">
+            <div class="main-education">
+                <button class="main-education-btn" type="button">Education</button>
+                <div class="main-education--panel">
+                   <ul>
+                       <li>
+                            <h3>School:</h3>
+                            <p>Russia, Sorochinsk, 2003-2014</p>
+                       </li>
+                       <li>
+                            <h3>University (bachelor)</h3>
+                            <p>Samara, Samara Aerospace University, 2014-2018</p>
+                       </li>
+                       <li>
+                            <h3>Military Department</h3>
+                            <p>Samara, Samara Aerospace University, 2015-2018</p>
+                       </li>
+                       <li>
+                            <h3>University (master)</h3>
+                            <p>Samara, Samara Aerospace University, 2018-2020</p>
+                       </li>
+                       <li>
+                            <h3>RSSchool Courses</h3>
+                            <p>2019-2020(I believe)</p>
+                       </li>
+                   </ul>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="carousel">
+                    <div class="item-container">
+                        <div class="item active">
+                            <div class="description">
+                                <div class="project-name">theyalow</div>
+                                <img class="project-image" src="src/images/theyalow1.png" alt="project">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="description">
+                                <div class="project-name">repair-design-project</div>
+                                <img class="project-image" src="src/images/repair.PNG" alt="project">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="description">
+                                <div class="project-name">codejam-canvas</div>
+                                <img class="project-image" src="src/images/codejam-canvas.PNG" alt="project">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control left">
+                        <div class="arrow left">&lt;</div>
+                    </div>
+                    <div class="control right">
+                            <div class="arrow right">&gt;</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./panel.js"></script>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

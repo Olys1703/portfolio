@@ -1,5 +1,17 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+.buttons {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  bottom: 50px;
+  right: 50px;
 
+}
+
+.buttons button {
+  height: 40px;
+  width: 100%;
+}
 /* Document
    ========================================================================== */
 
