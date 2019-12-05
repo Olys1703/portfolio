@@ -148,7 +148,15 @@ let currentItem = 0;
 console.log('items')
 document.getElementById('first-item').addEventListener('mouseup', ()=>{
   console.log('go')
-  document.location.href = "../project/theyalow/index.html"
+  document.location.href = "./project/theyalow/index.html"
+})
+document.getElementById('second-item').addEventListener('mouseup', ()=>{
+  console.log('go')
+  document.location.href = "./project/repair-design-project/index.html"
+})
+document.getElementById('third-item').addEventListener('mouseup', ()=>{
+  console.log('go')
+  document.location.href = "./project/canvas/index.html"
 })
 
 
