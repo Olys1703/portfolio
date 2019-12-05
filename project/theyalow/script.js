@@ -60,5 +60,7 @@ function changeSize () {
 let backButton = document.getElementById("back");
 
 backButton.addEventListener('click', ()=>{
-  document.location.href = ".../src/index.html"
+  document.location.href = "../../index.html"
 })
+
+backButton.textContent = "back";

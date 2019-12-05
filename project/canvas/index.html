@@ -7,74 +7,84 @@
     <title>Document</title>
 <link href="main.css" rel="stylesheet"></head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <button id="menu">
-                <img src="src/images/nav_icon.png" alt="">
-            </button>
-            <h1>CodeJam - Pallete</h1>
-            <button id="options">
-                    <img src="src/images/Shape.png" alt="">
-            </button>
-        </nav>
-    </header>
-    <main class="main">
-        <span class="main-toolsmenu">
-                <span class="main-toolswrapper">
-                        <ul class="main-tools">
-                            <li class="main-tools--tool selected">
-                                <img src="src/images/fill-drip.png" alt="Paint bucket">
-                                <p>Paint bucket</p>
-                            </li>
-                            <li class="main-tools--tool selected">
-                                <img src="src/images/icon-upload.png" alt="Choose color">
-                                <p>Choose color</p>
-                            </li>
-                            <li class="main-tools--tool selected">
-                                <img src="src/images/icon-copy.png" alt="Move">
-                                <p>Move</p>
-                            </li>
-                            <li class="main-tools--tool selected">
-                                <img src="src/images/exchange-alt.png" alt="Transform">
-                                <p>Transform</p>
-                            </li>
-                        </ul>
-                </span>
-                <span class="main-palletwrapper">
-                    <ul class="main-pallet">
-                        <li class="main-pallet--list selected">
-                            <span id="currentcolor" class="circle"></span>
-                            <p>Current color</p>
-                        </li>
-                        <li class="main-pallet--list selected">
-                            <span id="prevcolor" class="circle"></span>
-                            <p>Prev color</p>
-                        </li>
-                        <li class="main-pallet--list selected">
-                            <span id="firstcolor" class="circle"></span>
-                            <p>red</p>
-                        </li>
-                        <li class="main-pallet--list selected">
-                            <span id="secondcolor" class="circle"></span>
-                            <p>blue</p>
-                        </li>
-                    </ul>
-                </span>
-        </span>
-        <span class="main-canvaswrapper">
-            <canvas id="canvas" height="512px" width="512px">
-    
-            </canvas>
-        </span>
-        <span class="main-change">
-                <ul class="main-change--list">
-                    <li id="canvas4x4" class="selected">Sun</li>
-                    <li id="canvas32x32" class="selected">Codewars</li>
-                    <li id="canvasimage" class="selected">RSS</li>
-                </ul>
-        </span>
-
-        <img id="rss" src="src/images/image.png" alt="rss">
-    </main>
-<script type="text/javascript" src="bundle.js"></script></body>
+    <div id="content">
+            <div class="buttons">
+                    <button id="mob-or-desk" class="mob-or-desk">
+                    </button>
+                    <button id="back" class="back">
+                    </button>
+            </div>
+            <header class="header">
+                    <nav class="nav">
+                        <button id="menu">
+                            <img src="src/images/nav_icon.png" alt="">
+                        </button>
+                        <h1>CodeJam - Pallete</h1>
+                        <button id="options">
+                                <img src="src/images/Shape.png" alt="">
+                        </button>
+                    </nav>
+                </header>
+                <main class="main">
+                    <span class="main-toolsmenu">
+                            <span class="main-toolswrapper">
+                                    <ul class="main-tools">
+                                        <li class="main-tools--tool selected">
+                                            <img src="src/images/fill-drip.png" alt="Paint bucket">
+                                            <p>Paint bucket</p>
+                                        </li>
+                                        <li class="main-tools--tool selected">
+                                            <img src="src/images/icon-upload.png" alt="Choose color">
+                                            <p>Choose color</p>
+                                        </li>
+                                        <li class="main-tools--tool selected">
+                                            <img src="src/images/icon-copy.png" alt="Move">
+                                            <p>Move</p>
+                                        </li>
+                                        <li class="main-tools--tool selected">
+                                            <img src="src/images/exchange-alt.png" alt="Transform">
+                                            <p>Transform</p>
+                                        </li>
+                                    </ul>
+                            </span>
+                            <span class="main-palletwrapper">
+                                <ul class="main-pallet">
+                                    <li class="main-pallet--list selected">
+                                        <span id="currentcolor" class="circle"></span>
+                                        <p>Current color</p>
+                                    </li>
+                                    <li class="main-pallet--list selected">
+                                        <span id="prevcolor" class="circle"></span>
+                                        <p>Prev color</p>
+                                    </li>
+                                    <li class="main-pallet--list selected">
+                                        <span id="firstcolor" class="circle"></span>
+                                        <p>red</p>
+                                    </li>
+                                    <li class="main-pallet--list selected">
+                                        <span id="secondcolor" class="circle"></span>
+                                        <p>blue</p>
+                                    </li>
+                                </ul>
+                            </span>
+                    </span>
+                    <span class="main-canvaswrapper">
+                        <canvas id="canvas" height="512px" width="512px">
+                
+                        </canvas>
+                    </span>
+                    <span class="main-change">
+                            <ul class="main-change--list">
+                                <li id="canvas4x4" class="selected">Sun</li>
+                                <li id="canvas32x32" class="selected">Codewars</li>
+                                <li id="canvasimage" class="selected">RSS</li>
+                            </ul>
+                    </span>
+            
+                    <img id="rss" src="src/images/image.png" alt="rss">
+                </main>
+    </div>
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
+</body>
 </html>

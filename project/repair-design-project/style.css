@@ -5,7 +5,7 @@
   width: 100px;
   bottom: 50px;
   right: 50px;
-
+  z-index: 1;
 }
 
 .buttons button {

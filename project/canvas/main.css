@@ -2,6 +2,20 @@
   margin: 0;
   padding: 0; }
 
+  .buttons {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+  }
+  
+  .buttons button {
+    height: 40px;
+    width: 100%;
+  }
+  
 body {
   width: 80%;
   margin: auto;

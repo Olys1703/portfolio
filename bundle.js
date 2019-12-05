@@ -146,21 +146,21 @@ for (i = 0; i < coll.length; i++) {
 //let items = document.querySelectorAll('.carousel .item');
 let currentItem = 0;
 console.log('items')
-document.getElementById('first-item').addEventListener('mouseup', ()=>{
+document.getElementById('first-item').addEventListener('click', ()=>{
   console.log('go')
   document.location.href = "./project/theyalow/index.html"
 })
-document.getElementById('second-item').addEventListener('mouseup', ()=>{
+document.getElementById('second-item').addEventListener('click', ()=>{
   console.log('go')
   document.location.href = "./project/repair-design-project/index.html"
 })
-document.getElementById('third-item').addEventListener('mouseup', ()=>{
+document.getElementById('third-item').addEventListener('click', ()=>{
   console.log('go')
   document.location.href = "./project/canvas/index.html"
 })
 
 
-document.getElementById('first-item').click();
+//document.getElementById('first-item').click();
 
 /***/ }),
 
